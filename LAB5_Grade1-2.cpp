@@ -3,20 +3,20 @@
     	
     	while(js_1<num)
     	{
-	         a1=(rand()%100)+1;  //随机生成两个相加减的两个数a，b
+	         a1=(rand()%100)+1;  //闅忔満鐢熸垚涓や釜鐩稿姞鍑忕殑涓や釜鏁癮锛宐
 	         b1=(rand()%100)+1;
-	         c1=(rand()%2)+1;   //随机生成运算符号
+	         c1=(rand()%2)+1;   //闅忔満鐢熸垚杩愮畻绗﹀彿
 	         switch(c1)
 	         {
 	             case 1:cout<<a1<<'+'<<b1<<'=';cin>>sum1;
-	                    if(a1+b1 != sum1){cout<<"You are wrong！\n";js_1++;}else{cout<<"You are right！\n";js_1++;js1_1++;}
+	                    if(a1+b1 != sum1){cout<<"You are wrong锛乗n";js_1++;}else{cout<<"You are right锛乗n";js_1++;js1_1++;}
 	                    break;
 	             case 2:if(a1<b1){t1=a1;a1=b1;b1=t1;}cout<<a1<<'-'<<b1<<'=';cin>>sum1;
-	                    if(a1-b1 != sum1){cout<<"You are wrong！\n";js_1++;}else{cout<<"You are right！\n";js_1++;js1_1++;}
+	                    if(a1-b1 != sum1){cout<<"You are wrong锛乗n";js_1++;}else{cout<<"You are right锛乗n";js_1++;js1_1++;}
 	                    break;
 			}
 		}
-		//算分 
+		//绠楀垎 
 		if(js1_1==num){
 			cout<<"End! All right, that's great! Your score is 100."<<endl;
 		}else{
